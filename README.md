@@ -4,7 +4,7 @@
 <p>
   <table>
   <tr>
-    <td align="center"><a href="https://github.com/amadeu100401"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/54649985?v=4" width="100px;" alt=""/><br /><sub><b>Amadeu Martim</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat"></a></td>
+    <td align="center"><a href="https://github.com/amadeu100401"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/54649985?v=4" width="100px;" alt=""/><br /><sub><b>Perfil no git Amadeu Martim</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat"></a><br/><a href="https://www.linkedin.com/in/amadeu-martim-silva-de-oliveira-94a30b1a2/">Perfil no Linkedin</a></td>
   </tr>
 </table>
 </p>
