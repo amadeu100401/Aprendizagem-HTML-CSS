@@ -10,9 +10,9 @@
 </p>
 <h1> 🛠 Tecnologia utilizada</h1>
 <p>
-  •  <a href="https://www.w3schools.com/html/" width="300px;">HTML5</a> 
-  •  <a href="https://www.w3schools.com/css/default.asp" width="300px;">CSS3</a>
-  •  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" width="300px;">JavaScript</a>
+  •<a href="https://www.w3schools.com/html/" width="300px;">HTML5</a> 
+  •<a href="https://www.w3schools.com/css/default.asp" width="300px;">CSS3</a>
+  •<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" width="300px;">JavaScript</a>
 </p>
 
 
