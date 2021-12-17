@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            display: inline;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;*/
+
+            /*Usando short hand*/
+            border: 10px solid darkslategray ;/*Tem que seguir a ordem de cima*/
+            
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            /*Usando short hand*/
+            padding: 10px 10px 10px 10px ;/*Segue a ordem de cima*/
+
+           /*margin: auto; centralizado*/
+
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+
+            /*Usando short hand*/
+            margin: 10px 10px 10px 10px;/*Segue a ordem de cima*/
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;*/
+
+            /*Usando short hand*/
+            outline: 5px dashed salmon;/*Segue a ordem de cima*/
+        }
+
+        a{
+            /*border-width: 10PX;
+            border-style: solid;
+            border-color: rgb(0, 255, 213);*/
+
+            border: 10px solid rgb(0, 255, 213);
+
+            display: block;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1><!---->
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="*">LINKS são exemplos de line-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>
