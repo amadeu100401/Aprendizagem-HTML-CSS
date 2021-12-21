@@ -1,4 +1,4 @@
-<h1 align="center">Aprendizagem Front-end</h1>
+<h1 align="center">Estudos Front-end</h1>
 <p align="center"> Repositório para registrar minha evolução no frontend utilizando HTML,CSS e javaScript.</p>
 <h1>👨‍💻 Estudante</h1>
 <p>
