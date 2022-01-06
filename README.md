@@ -1,5 +1,5 @@
 <h1 align="center">Estudos Front-end</h1>
-<p align="center"> Repositório para registrar minha evolução no frontend utilizando HTML,CSS e javaScript.</p>
+<p align="center"> Repositório para registrar minha evolução no frontend utilizando HTML,CSS e JavaScript.</p>
 <h1>👨‍💻 Estudante</h1>
 <p>
   <table>
