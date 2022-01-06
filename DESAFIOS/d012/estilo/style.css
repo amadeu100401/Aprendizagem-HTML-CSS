@@ -62,7 +62,7 @@ section.normal{
 }
 
 section.imagem{
-    background-color: rgb(66, 66, 66);
+    background-color: rgba(0, 0, 0, 0.322);
     color: white;
 
 }
