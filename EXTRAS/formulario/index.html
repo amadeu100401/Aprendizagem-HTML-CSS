@@ -10,10 +10,10 @@
 <body>
     <header>
         <h1>Formulário sobre a áera de TI</h1>
-        <h3>Muito obrigado por participar da pesquisa</h3>
+        <h4>Muito obrigado por participar da pesquisa</h4>
     </header>
     <main class="form">
-        <p>
+        <div>
             <form action="" id="form">
                 <label for="name" class="text1">Nome</label><br>
                 <input type="text" id="fname" name="fname" placeholder="Informe o seu nome" class="text"><br>
@@ -29,15 +29,32 @@
                     <option value="not say">Prefiro não informar</option>
                     <option value="outro">Outro</option>
                 </select><br>
-                <label for="recomendation" class="text1">Você recomendaria estudar programação para alguém?</label><br>
-                <input type="radio" id="recomendaria" name="recomendacao" value="yes">
-                <label for="recomendaria">Recomendaria</label><br>
-                <input type="radio" id="talvez" name="recomendacao" value="maybe">
-                <label for="talvez">Talvez recomendaria</label><br>
-                <input type="radio" id="naoRecomendaria" name="recomendacao" value="not">
-                <label for="naoRecomendaria">Não recomendaria</label>
-        </form>
-        </p>
+                <label for="recomendation" class="text1">Você recomendaria o estudo da programação?</label><br>
+                <div class="text2">
+                    <input type="radio" id="recomendaria" name="recomendacao" value="yes">
+                    <label for="recomendaria">Recomendaria</label><br>
+                    <input type="radio" id="talvez" name="recomendacao" value="maybe">
+                    <label for="talvez">Talvez recomendaria</label><br>
+                    <input type="radio" id="naoRecomendaria" name="recomendacao" value="not">
+                    <label for="naoRecomendaria">Não recomendaria</label>
+                </div>
+                <label for="stack" class="text1">Qual área da programação você atua ou tem vontade de atuar?</label><br>
+                <div class="text2">
+                    <input type="checkbox" name="stack" id="frontend" value="frontend">
+                    <label for="frotend">Front-end</label><br>
+                    <input type="checkbox" name="stack" id="backend" value="backend">
+                    <label for="backend">Back-end</label><br>
+                    <input type="checkbox" name="stack" id="fullstack" value="fullstack">
+                    <label for="fullstack">Fullstack</label>
+                </div>
+                <label for="suggentions" class="text1">Deseja fazer alguma sugestão para a pesquisa?</label><br>
+                <input type="text" name="suggestions" id="sugestao" class="text3" placeholder="Escreva sua sugestão aqui...">
+                </form>
+                <input type="button" value="Enviar" class="btn1">
+        </div>
     </main>
+    <footer>
+        <p>Formulário feito por <a href="https://github.com/amadeu100401" target="blanck">Amadeu Martim</a></p>
+    </footer>
 </body>
 </html>
