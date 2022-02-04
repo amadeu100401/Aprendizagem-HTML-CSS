@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forumlário</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário sobre a áera de TI</h1>
+        <h3>Muito obrigado por participar da pesquisa</h3>
+    </header>
+    <main class="form">
+        <p>
+            <form action="" id="form">
+                <label for="name" class="text1">Nome</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Informe o seu nome" class="text"><br>
+                <label for="email" class="text1">Email</label><br>
+                <input type="email" id="femail" name="femail" placeholder="Informe seu email" class="text"><br>
+                <label for="idade" class="text1">Idade</label><br>
+                <input type="number" id="fidade" name="fidade" placeholder="Informe a sua idade" class="text"><br>
+                <label for="fpergunta1" class="text1">Qual opção descreve melhor sua atividade?</label><br>
+                <select name="activites" id="activites" placeholder="Selecione uma opção" class="text">
+                    <option value="Estudante">Estudante</option>
+                    <option value="Trabalhador em tempo integral">Trabalhador em tempo integral</option>
+                    <option value="Estagiario">Estagiário</option>
+                    <option value="not say">Prefiro não informar</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="recomendation" class="text1">Você recomendaria estudar programação para alguém?</label><br>
+                <input type="radio" id="recomendaria" name="recomendacao" value="yes">
+                <label for="recomendaria">Recomendaria</label><br>
+                <input type="radio" id="talvez" name="recomendacao" value="maybe">
+                <label for="talvez">Talvez recomendaria</label><br>
+                <input type="radio" id="naoRecomendaria" name="recomendacao" value="not">
+                <label for="naoRecomendaria">Não recomendaria</label>
+        </form>
+        </p>
+    </main>
+</body>
+</html>
