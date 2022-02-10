@@ -7,6 +7,34 @@
     <title>Forumlário</title>
     <link rel="stylesheet" href="Estilos/style.css">
 </head>
+<script>
+    function cadastro() {
+        let nome = window.document.getElementById("fname").value;
+        let email = window.document.getElementById("femail").vlaue;
+        let idade = window.document.getElementById("fidade").value;
+        let selectAtividade = document.getElementById("activites").value;
+        let sugestao = document.getElementById("sugestao").value;
+        let recomendacao;
+        let areaAtuacao;
+        if (document.getElementById("recomendaria").checked){
+            recomendacao = "Recomendaria";
+        } else if (document.getElementById("talvez").checked){
+            recomendacao = "Talvez recomendaria";
+        } else if (document.getElementById("naoRecomendaria").checked){
+            recomendacao = "Não recomendaria";
+        }
+
+        if (document.getElementById("frontend").checked){
+            areaAtuacao = "Froent-end";
+        } else if (document.getElementById("backend").checked){
+            areaAtuacao = "Back-end";
+        } else if (document.getElementById("fullstack").checked){
+            areaAtuacao = "Full-stack";
+        }
+        window.alert(`Nome: ${nome}\nEmail: ${email}\nIdade: ${idade}\nProfissão: ${selectAtividade}\nRecomendaria: ${recomendacao}\nÁrea de atuação: ${areaAtuacao}\nSugestão: ${sugestao}`)
+
+    }
+</script>
 <body>
     <header>
         <h1>Formulário sobre a áera de TI</h1>
@@ -23,10 +51,10 @@
                 <input type="number" id="fidade" name="fidade" placeholder="Informe a sua idade" class="text"><br>
                 <label for="fpergunta1" class="text1">Qual opção descreve melhor sua atividade?</label><br>
                 <select name="activites" id="activites" placeholder="Selecione uma opção" class="text">
-                    <option value="Estudante">Estudante</option>
-                    <option value="Trabalhador em tempo integral">Trabalhador em tempo integral</option>
-                    <option value="Estagiario">Estagiário</option>
-                    <option value="not say">Prefiro não informar</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalhador em tempo integral">Trabalhador em tempo integral</option>
+                    <option value="estagiario">Estagiário</option>
+                    <option value="Prefiro não informar">Prefiro não informar</option>
                     <option value="outro">Outro</option>
                 </select><br>
                 <label for="recomendation" class="text1">Você recomendaria o estudo da programação?</label><br>
@@ -40,17 +68,17 @@
                 </div>
                 <label for="stack" class="text1">Qual área da programação você atua ou tem vontade de atuar?</label><br>
                 <div class="text2">
-                    <input type="checkbox" name="stack" id="frontend" value="frontend">
+                    <input type="radio" name="stack" id="frontend" value="frontend">
                     <label for="frotend">Front-end</label><br>
-                    <input type="checkbox" name="stack" id="backend" value="backend">
+                    <input type="radio" name="stack" id="backend" value="backend">
                     <label for="backend">Back-end</label><br>
-                    <input type="checkbox" name="stack" id="fullstack" value="fullstack">
+                    <input type="radio" name="stack" id="fullstack" value="fullstack">
                     <label for="fullstack">Fullstack</label>
                 </div>
                 <label for="suggentions" class="text1">Deseja fazer alguma sugestão para a pesquisa?</label><br>
                 <input type="text" name="suggestions" id="sugestao" class="text3" placeholder="Escreva sua sugestão aqui...">
                 </form>
-                <input type="button" value="Enviar" class="btn1">
+                <button type="submit" class="btn1" onclick="cadastro()">Enviar</button>
         </div>
     </main>
     <footer>

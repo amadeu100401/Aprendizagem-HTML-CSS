@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: rgb(62, 162, 255);
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    header > nav {
+       padding-top: 10px;
+    }
+    div {
+        height: 500px;
+        width: 500px;
+        background-color: aqua;
+        margin: auto;
+        border-radius: 5px;
+    }
+    div.numeric {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    div.name {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        width: 500px;
+        height: 50px;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+    div.counting {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        width: 500px;
+        height: 50px;
+    }
+    .numeric{
+        width: 500px;
+        height: 50px;
+    }
+</style>
+<script>
+    window.alert("Olá, seja muito bem vindo a nossa área de testes.")
+    function clicou() {
+        let name = window.prompt('Qual cor deseja? Rosa ou laranja?')
+        window.alert(`A nova cor será: ${name}!`)
+
+        if (name === 'rosa') {
+            document.getElementById("corpo").style.backgroundColor = 'pink';
+        }else if (name === 'laranja') {
+            document.getElementById("corpo").style.backgroundColor = 'orange';
+        }
+    }
+
+    function fundo() {
+        document.getElementById("fundo").style.backgroundColor = 'black';
+        document.getElementById("teste").style.color = 'white';
+    }
+
+    function fundo2() {
+        document.getElementById("fundo").style.backgroundColor = 'white';
+        document.getElementById("teste").style.color = 'black';
+    }
+
+    function nome() {
+        let name = window.prompt('Qual o teu nome?')
+        let res = window.document.getElementById('resultado')
+        if (name == null)  {
+            res.innerHTML = `<p>Informe um nome por favor`
+        } else {
+        res.innerHTML = `<p>Olá, <strong>${name}<strong>! Seja bem vindo.&#x1F596;`
+        }
+    }
+
+    function conta() {
+        let n1 = window.prompt('Informe um número:')
+        let res = window.document.getElementById('numeric')
+        res.innerHTML = `<p>O dobro desse número é ${n1*2}<strong> e o seu antecessor é ${n1-1}<strong>.`
+    }
+
+    function email() {
+        let email = window.document.getElementById('login').value;
+        window.alert(`${email}`)
+    }
+
+</script>
+<body id="fundo">
+    <header>
+        <nav>
+            <h1 id="teste">Área de testes</h1>
+            <button onclick="fundo()">Tema ecurto</button>
+            <button onclick="fundo2()">Tema claro</button>
+        </nav>
+    </header>
+    <div id="corpo">
+        <button onclick="clicou()">Clica em mim para escolher a cor!</button>
+        <button onclick="nome()">Clique para informar seu nome</button>
+        <div class="numeric">
+            <button onclick="conta()">clique aqui para calcular</button>
+            <p id="numeric"></p>
+        </div>
+        <div class="name">
+            <h2 id="resultado">A resposta vai aparecer aqui...</h2>
+        </div>
+        <div class="counting">
+            <label for="">Informe o seu email</label>
+            <input type="email" name="login" id="login" placeholder="exemplo@exemplo.com">
+            <button type="submit" onclick="email()">Cadastrar</button>
+        </div>
+    </div>
+</body>
+</html>
